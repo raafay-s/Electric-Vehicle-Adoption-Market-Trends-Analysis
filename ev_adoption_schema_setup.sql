@@ -1,3 +1,5 @@
+--This table loads the cleaned electric vehicle data from the source into the database
+
 CREATE TABLE EV_ADOPTION (
     state VARCHAR2(50),
     year NUMBER,
