@@ -54,5 +54,3 @@ df.to_csv("EV_Data_Cleaned.csv", index=False)
 
 # Downloads the cleaned CSV file
 files.download("EV_Data_Cleaned.csv")
-
-# The cleaned dataset is now ready for SQL import
