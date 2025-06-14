@@ -1,6 +1,6 @@
 # Electric Vehicle Adoption & Infrastructure Analysis
 ## Project Overview
-This project focuses on analyzing the landscape of Electric Vehicle (EV) adoption across the United States from 2018 to 2023. By leveraging data related to EV registrations, infrastructure availability, economic indicators, education levels, and political affiliation, I aimed to uncover meaningful insights about what drives EV growth and where the adoption gaps lie. I also analyzed how different socioeconomic and policy-based factors influence EV adoption and growth across states. The main objective was to conduct a comprehensive, data-driven analysis of the key enablers and obstacles in the EV transition using SQL and Power BI for analysis and visualization.
+This project focuses on analyzing the landscape of Electric Vehicle (EV) adoption across the United States from 2018 to 2023. By leveraging data related to EV registrations, infrastructure availability, economic indicators, education levels, and political affiliation, I aimed to uncover meaningful insights about what drives EV growth and where the adoption gaps lie. I also analyzed how different socioeconomic and policy-based factors influence EV adoption and growth across states. The main objective was to conduct a comprehensive, data-driven analysis of the key enablers and obstacles in the EV transition using Python for data prep, Oracle SQL for modeling and logic, and Power BI for interactive visualization..
 
 ## Technologies and Libraries
 * **Python (pandas)**: Used for data cleaning, preprocessing, and preparing the dataset for analysis
@@ -55,7 +55,7 @@ I worked with a comprehensive dataset that compiled state-level EV adoption data
 
 ## Data Workflow Overview
 **Extract & Clean (Python)**
-I began by collecting a raw CSV dataset from Kaggle that combined multiple governmental and nonprofit sources into a yearly EV adoption panel dataset. Using Python with pandas, I cleaned the dataset by:
+I began by collecting a raw CSV dataset from Kaggle (shown above) that combined multiple governmental and nonprofit sources into a yearly EV adoption panel dataset. Using Python with pandas, I cleaned the dataset by:
 * Removing null and irrelevant rows
 * Fixing data types
 * Converting all column headers to lowercase and consistent naming
