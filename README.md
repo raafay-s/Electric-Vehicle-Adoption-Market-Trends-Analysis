@@ -1,4 +1,4 @@
-# Title
+# Electric Vehicle Adoption & Infrastructure Analysis
 ## Project Overview
 This project focuses on analyzing the landscape of Electric Vehicle (EV) adoption across the United States from 2018 to 2023. By leveraging data related to EV registrations, infrastructure availability, economic indicators, education levels, and political affiliation, I aimed to uncover meaningful insights about what drives EV growth and where the adoption gaps lie. I also analyzed how different socioeconomic and policy-based factors influence EV adoption and growth across states. The main objective was to conduct a comprehensive, data-driven analysis of the key enablers and obstacles in the EV transition using SQL and Power BI for analysis and visualization.
 
@@ -80,6 +80,9 @@ In Power BI, I connected to the SQL views and imported results. Using interactiv
 * Charging Infrastructure Analysis
 * Policy Impact
 * Socioeconomic Influences
+I used card visuals for KPIs, filled maps for EV share per state, line charts for year-over-year trends, bar charts for comparisons, and many other constructive visuals. Tooltips, drill-downs, and slicers made the dashboards interactive. Some key findings include:
+* 1
+* 2
 
 # Conclusion
 This EV Adoption project demonstrates a complete data pipeline. It started from messy raw data to a polished interactive dashboard. I explored electric vehicle adoption trends across the U.S. by correlating socioeconomic, environmental, and infrastructural factors. Using Python, SQL, and Power BI, I was able answer many complex questions and discover new trends. My findings show that states with strong incentives, higher income, and better charging infrastructure tend to have significantly higher EV adoption. This kind of insight can inform real-world policy and investment decisions in clean transportation infrastructure.
