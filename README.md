@@ -86,6 +86,7 @@ In Power BI, I connected to the SQL views and imported results. Using interactiv
 * Charging Infrastructure Analysis
 * Policy Impact
 * Socioeconomic Influences
+
 I used card visuals for KPIs, filled maps for EV share per state, line charts for year-over-year trends, bar charts for comparisons, and many other constructive visuals. Tooltips, drill-downs, and slicers made the dashboards interactive. Some key findings include:
 * 1
 * 2
