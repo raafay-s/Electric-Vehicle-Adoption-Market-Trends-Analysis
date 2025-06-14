@@ -65,7 +65,7 @@ This project followed a manual ETL-style process to move from raw data to intera
 * Transform: Cleaned and preprocessed using Python (pandas), with additional logic and aggregation in SQL
 * Load: Inserted into Oracle SQL tables for analysis and visualization in Power BI
 
-**Extract & Clean (Python)**
+**Extract & Clean (Python)**:
 I began by collecting a raw CSV dataset from Kaggle (shown above) that combined multiple governmental and nonprofit sources into a yearly EV adoption panel dataset. Using Python with pandas, I cleaned the dataset by:
 * Removing null and irrelevant rows
 * Fixing data types
@@ -73,7 +73,7 @@ I began by collecting a raw CSV dataset from Kaggle (shown above) that combined 
 * Handling special cases such as dividing by zero where charging outlets were 0
 * Replacing or imputing missing values where needed using median or forward fill strategies
 
-**Data Modeling and Analysis (Oracle SQL)**
+**Data Modeling and Analysis (Oracle SQL)**:
 Once cleaned, the data was loaded into Oracle SQL. I created a master table **EV_ADOPTION**, into which I inserted the entire dataset. Then I wrote a collection of CREATE VIEW statements to build logic layers that answered specific questions including (but not limited to):
 * EV registration growth by year using LAG() window functions
 * Average EV share growth across years and states
@@ -83,7 +83,7 @@ Once cleaned, the data was loaded into Oracle SQL. I created a master table **EV
 
 I also implemented a stored procedure called **SUMMARIZE_EV_BY_YEAR**. This procedure is designed to generate a yearly summary report that captures the most important trends in the dataset. Specifically, it looks at all the data in the EV_ADOPTION table and, for each year, calculates three key metrics: the average EV share percentage (how widespread EV usage is), the average per capita income, and the total number of public EV charging stations. The procedure then inserts one row per year with those stats into a new table called **EV_YEARLY_SUMMARY**. This makes it much easier to  analyze how these metrics have changed over time in dashboards without rerunning complex queries. The dataset I used in this project is a static snapshot, but my stored procedure is designed to calculate and update yearly EV summary statistics. If connected to a dynamic data source, such as recurring API feeds or automated CSV uploads with updated data, this procedure could be scheduled to run regularly and keep the summary table up to date without manual intervention, allowing dashboards to reflect real-time trends.
 
-**Visualization (Power BI)**
+**Visualization (Power BI)**:
 In Power BI, I connected to the SQL views and imported results. Using interactive slicers for year and state, I built multiple report pages highlighting:
 * EV Adoption Overview
 * Charging Infrastructure Analysis
