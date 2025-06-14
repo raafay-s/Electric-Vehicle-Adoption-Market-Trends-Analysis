@@ -60,6 +60,11 @@ I worked with a comprehensive dataset that compiled state-level EV adoption data
 </details>
 
 ## Data Workflow Overview
+This project followed a manual ETL-style process to move from raw data to interactive insights. Although not automated, the workflow mirrored the structure of a traditional ETL pipeline:
+* Extract: Pulled raw EV data from Kaggle
+* Transform: Cleaned and preprocessed using Python (pandas), with additional logic and aggregation in SQL
+* Load: Inserted into Oracle SQL tables for analysis and visualization in Power BI
+
 **Extract & Clean (Python)**
 I began by collecting a raw CSV dataset from Kaggle (shown above) that combined multiple governmental and nonprofit sources into a yearly EV adoption panel dataset. Using Python with pandas, I cleaned the dataset by:
 * Removing null and irrelevant rows
