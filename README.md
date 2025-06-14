@@ -5,7 +5,7 @@ This project focuses on analyzing the landscape of Electric Vehicle (EV) adoptio
 ## Technologies and Libraries
 * **Python (pandas)**: Used for data cleaning, preprocessing, and preparing the dataset for analysis
 * **Oracle SQL**: Employed for querying, transforming, and organizing data into analytical views
-* **Power BI for**: Utilized to build interactive dashboards and visualize key trends and insights
+* **Power BI**: Utilized to build interactive dashboards and visualize key trends and insights
 
 ## Files Included
 * **EV_Data.csv**: Raw dataset containing electric vehicle adoption and infrastructure data across U.S. states
@@ -83,6 +83,8 @@ In Power BI, I connected to the SQL views and imported results. Using interactiv
 I used card visuals for KPIs, filled maps for EV share per state, line charts for year-over-year trends, bar charts for comparisons, and many other constructive visuals. Tooltips, drill-downs, and slicers made the dashboards interactive. Some key findings include:
 * 1
 * 2
+
+**Key Insights**
 
 ## Conclusion
 This EV Adoption project demonstrates a complete data pipeline. It started from messy raw data to a polished interactive dashboard. I explored electric vehicle adoption trends across the U.S. by correlating socioeconomic, environmental, and infrastructural factors. Using Python, SQL, and Power BI, I was able answer many complex questions and discover new trends. My findings show that states with strong incentives, higher income, and better charging infrastructure tend to have significantly higher EV adoption. This kind of insight can inform real-world policy and investment decisions in clean transportation infrastructure.
