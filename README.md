@@ -1,1 +1,2 @@
-a
+**Project Overview**
+This project focuses on analyzing the landscape of Electric Vehicle (EV) adoption across the United States from 2018 to 2023. By leveraging data related to EV registrations, infrastructure availability, economic indicators, education levels, and political affiliation, I aimed to uncover meaningful insights about what drives EV growth and where the adoption gaps lie. I also analyzed how different socioeconomic and policy-based factors influence EV adoption and growth across states. The main objective was to conduct a comprehensive, data-driven analysis of the key enablers and obstacles in the EV transition using SQL and Power BI for analysis and visualization.
