@@ -14,7 +14,7 @@ This project focuses on analyzing the landscape of Electric Vehicle (EV) adoptio
 * **ev_adoption_schema_setup.sql**: SQL script to define and set up the database schema
 * **ev_data_cleaning_script.py**: Python script used to clean, preprocess, and export the raw data
 
-# Dataset Summary
+## Dataset Summary
 I worked with a comprehensive dataset that compiled state-level EV adoption data from 2018 to 2023. The dataset contained economic indicators, environmental sentiment scores, charging infrastructure counts, and vehicle registration metrics across all 50 states
 | Variable                             | Description                                                                 |
 |--------------------------------------|-----------------------------------------------------------------------------|
@@ -53,7 +53,7 @@ I worked with a comprehensive dataset that compiled state-level EV adoption data
 | `trucks_share`                     | Percentage of total vehicles that are trucks                               |
 | `party`                            | Predominant political party of the state                                   |
 
-# Data Workflow Overview
+## Data Workflow Overview
 **Extract & Clean (Python)**
 I began by collecting a raw CSV dataset from Kaggle that combined multiple governmental and nonprofit sources into a yearly EV adoption panel dataset. Using Python with pandas, I cleaned the dataset by:
 * Removing null and irrelevant rows
@@ -84,6 +84,6 @@ I used card visuals for KPIs, filled maps for EV share per state, line charts fo
 * 1
 * 2
 
-# Conclusion
+## Conclusion
 This EV Adoption project demonstrates a complete data pipeline. It started from messy raw data to a polished interactive dashboard. I explored electric vehicle adoption trends across the U.S. by correlating socioeconomic, environmental, and infrastructural factors. Using Python, SQL, and Power BI, I was able answer many complex questions and discover new trends. My findings show that states with strong incentives, higher income, and better charging infrastructure tend to have significantly higher EV adoption. This kind of insight can inform real-world policy and investment decisions in clean transportation infrastructure.
 
