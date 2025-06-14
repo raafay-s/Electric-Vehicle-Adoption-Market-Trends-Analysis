@@ -18,6 +18,9 @@ This project focuses on analyzing the landscape of Electric Vehicle (EV) adoptio
 I worked with a comprehensive dataset that compiled state-level EV adoption data from 2018 to 2023. The dataset contained economic indicators, environmental sentiment scores, charging infrastructure counts, and vehicle registration metrics across all 50 states
 <details>
 <summary><strong>Click to expand Variable Dictionary</strong></summary>
+
+<br>
+
 | Variable                             | Description                                                                 |
 |--------------------------------------|-----------------------------------------------------------------------------|
 | `state`                              | US state                                                                   |
