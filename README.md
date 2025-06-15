@@ -99,6 +99,9 @@ I used card visuals, filled maps, line charts, bar charts, and many other constr
 
 ## Results and Analysis
 
+## Limitations & Challenges
+* data is only up until 2023
+  
 ## Conclusion
 This EV Adoption project demonstrates a complete data pipeline. It started from messy raw data to a polished interactive dashboard. I explored electric vehicle adoption trends across the U.S. by correlating socioeconomic, environmental, and infrastructural factors. Using Python, SQL, and Power BI, I was able answer many complex questions and discover new trends. My findings show that states with strong incentives, higher income, and better charging infrastructure tend to have significantly higher EV adoption. This kind of insight can inform real-world policy and investment decisions in clean transportation infrastructure.
 
