@@ -25,21 +25,7 @@ SELECT state,
 FROM EV_ADOPTION
 ORDER BY state, year;
 
--- View 4: Top EV Growth States by YoY Registration
--- Purpose: Identify states with the highest single-year jump in EV registrations
-CREATE OR REPLACE VIEW top_ev_reg_growth AS
-SELECT *
-FROM (
-  SELECT state, 
-         year, 
-         ev_growth
-  FROM ev_registration_growth
-  WHERE ev_growth IS NOT NULL
-  ORDER BY ev_growth DESC
-)
-FETCH FIRST 10 ROWS ONLY;
-
--- View 5: Average EV Share Growth Across All States
+-- View 4: Average EV Share Growth Across All States
 -- Purpose: Determine the average EV share growth across all states from 2018–2023
 CREATE OR REPLACE VIEW avg_ev_share_growth AS
 SELECT ROUND(AVG(share_growth), 2) AS avg_ev_share_growth
@@ -50,7 +36,7 @@ FROM (
 )
 WHERE share_growth IS NOT NULL;
 
--- View 6: Fastest Growing Low-Adoption States
+-- View 5: Fastest Growing Low-Adoption States
 -- Purpose: Show states that started with <1% EV share and had the largest growth
 CREATE OR REPLACE VIEW fast_ev_adopters AS
 SELECT state, 
@@ -62,7 +48,7 @@ HAVING MIN(ev_share_percent) < 1
 ORDER BY total_ev_share_growth DESC
 FETCH FIRST 10 ROWS ONLY;
 
--- View 7: EVs Per Charging Outlet
+-- View 6: EVs Per Charging Outlet
 -- Purpose: Identify which states are most under-supported by infrastructure
 CREATE OR REPLACE VIEW evs_per_outlet AS
 SELECT state, 
@@ -73,7 +59,7 @@ SELECT state,
 FROM EV_ADOPTION
 ORDER BY evs_per_outlet DESC;
 
--- View 8: Charging Infrastructure vs. EV Share
+-- View 7: Charging Infrastructure vs. EV Share
 -- Purpose: Explore correlation between charging availability and EV share
 CREATE OR REPLACE VIEW outlets_vs_evshare AS
 SELECT state,
@@ -83,7 +69,7 @@ FROM EV_ADOPTION
 GROUP BY state
 ORDER BY avg_outlets DESC;
 
--- View 9: Incentives vs. EV Share
+-- View 8: Incentives vs. EV Share
 -- Purpose: Examine whether incentives impact EV share growth
 CREATE OR REPLACE VIEW incentive_vs_evshare AS
 SELECT state, 
@@ -94,7 +80,7 @@ FROM EV_ADOPTION
 WHERE incentives IS NOT NULL
 ORDER BY incentives DESC;
 
--- View 10: States with High Incentives vs. Median
+-- View 9: States with High Incentives vs. Median
 -- Purpose: Compare EV share for states with incentives above the median
 CREATE OR REPLACE VIEW above_median_incentive_evshare AS
 SELECT ROUND(AVG(ev_share_percent), 2) AS avg_ev_share_high_incentive
@@ -103,7 +89,7 @@ WHERE incentives > (
   SELECT MEDIAN(incentives) FROM EV_ADOPTION WHERE incentives IS NOT NULL
 );
 
--- View 11: Education Level vs. EV Share (Yearly)
+-- View 10: Education Level vs. EV Share (Yearly)
 -- Purpose: Analyze education level and EV share over time
 CREATE OR REPLACE VIEW education_vs_evshare AS
 SELECT state, 
@@ -113,7 +99,7 @@ SELECT state,
 FROM EV_ADOPTION
 ORDER BY education_bachelor DESC;
 
--- View 12: Education Level vs. EV Share (State Average)
+-- View 11: Education Level vs. EV Share (State Average)
 -- Purpose: Get average education and EV share per state
 CREATE OR REPLACE VIEW avg_education_vs_evshare AS
 SELECT state,
@@ -123,7 +109,7 @@ FROM EV_ADOPTION
 GROUP BY state
 ORDER BY avg_bachelor DESC;
 
--- View 13: Income vs. EV Share
+-- View 12: Income vs. EV Share
 -- Purpose: Compare average income and EV share per state
 CREATE OR REPLACE VIEW income_vs_evshare AS
 SELECT state,
@@ -133,7 +119,7 @@ FROM EV_ADOPTION
 GROUP BY state
 ORDER BY avg_income DESC;
 
--- View 14: Political Affiliation vs. EV Share
+-- View 13: Political Affiliation vs. EV Share
 -- Purpose: Compare EV adoption between Democratic and Republican states
 CREATE OR REPLACE VIEW party_vs_evshare AS
 SELECT party,
@@ -142,7 +128,7 @@ FROM EV_ADOPTION
 GROUP BY party
 ORDER BY avg_ev_share DESC;
 
--- View 15: Gasoline Price vs. EV Share Over Time
+-- View 14: Gasoline Price vs. EV Share Over Time
 -- Purpose: See if gas prices affect EV share adoption over time
 CREATE OR REPLACE VIEW gas_price_vs_evshare AS
 SELECT state, 
