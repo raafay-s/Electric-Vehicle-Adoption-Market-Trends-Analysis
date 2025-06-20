@@ -126,7 +126,7 @@ Below are selected insights from the many analyses conducted across the EV datas
     * This suggests that factors have a much stronger influence than education level alone.
     * In other words, higher education is not a reliable standalone predictor of EV market growth across states.
 
-These findings reflect only a narrow portion of the full report. To explore all visuals, you can download and open the complete Power BI file to access the full dashboard experience.
+These findings reflect a very narrow portion of the full report. To explore all visuals, you can download and open the complete Power BI file to access the full dashboard experience.
 
 ## Limitations & Challenges
 * data is only up until 2023
