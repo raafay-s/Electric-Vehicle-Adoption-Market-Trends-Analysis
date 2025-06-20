@@ -2,9 +2,6 @@
 ## Project Overview
 This project explores the growth of electric vehicle (EV) adoption across the United States from 2018 to 2023, using a combination of cleaned state-level data and a fully interactive Power BI dashboard. The analysis covers key factors influencing EV uptake, including registration trends, charging infrastructure, financial incentives, fuel prices, income levels, and political affiliation. The main objective was to conduct a comprehensive, data-driven analysis of the key enablers and obstacles in the EV transition using Python for data prep, Oracle SQL for modeling and logic, and Power BI for interactive visualization. By transforming raw data into a structured format, this project successfully enables a multi-angle exploration of how adoption patterns differ across geography and time. The resulting dashboard empowers users to uncover state-specific insights, compare policy impacts, analyze nationwide charging infrastructures, and assess nationwide progress toward EV transition goals.
 
-
-
-
 ## Technologies and Libraries
 * **Python (pandas)**: Used for data cleaning, preprocessing, and preparing the dataset for analysis
 * **Oracle SQL**: Employed for querying, transforming, and organizing data into analytical views
@@ -16,10 +13,11 @@ This project explores the growth of electric vehicle (EV) adoption across the Un
 * **ev_adoption_analysis_views.sql**: SQL script that creates analytical views for exploring EV trends and metrics
 * **ev_adoption_schema_setup.sql**: SQL script to define and set up the database schema
 * **ev_data_cleaning_script.py**: Python script used to clean, preprocess, and export the raw data
-* 
+* **EV Adoption Overview & Market Trends Analysis.pbix**: Power BI report file containing the interactive dashboards
+* **EV Adoption Overview & Market Trends Analysis.pdf**: Static PDF export of the Power BI report
 
 ## Dataset Summary
-I worked with a comprehensive dataset that compiled state-level EV adoption data from 2018 to 2023. The dataset contained economic indicators, environmental sentiment scores, charging infrastructure counts, and vehicle registration metrics across all 50 states
+I worked with a comprehensive dataset from Kaggle that compiled state-level EV adoption data from 2018 to 2023. The dataset contained economic indicators, environmental sentiment scores, charging infrastructure counts, and vehicle registration metrics across all 50 states
 <details>
 <summary><strong>Click to expand Variable Dictionary</strong></summary>
 
