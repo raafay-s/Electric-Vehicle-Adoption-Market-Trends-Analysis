@@ -98,14 +98,35 @@ I used card visuals, filled maps, line charts, bar charts, and many other constr
 * 2
 
 ## Results and Analysis
-below r some key findings of the nany analysis and findings i made. to view the full report to access like everything pls download the powebi report and see for yourself with al lthe interactive visuals and ...
+Below are selected insights from the many analyses conducted across the EV dataset. These findings are based on interactive visuals, measures, and page-level filters available in the Power BI dashboard. To explore the full report, including all pages, visuals, breakdowns, and slicers, please download the "EV Adoption Overview & Market Trends Analysis" Power BI file and view it directly.
+
 1. National EV Adoption is Accelerating Rapidly
-- From 2018 to 2023:
-   * EV registrations grew from ~572K to ~3.56M — a 6x increase.
-   * The average EV share across states rose from 0.14% to 0.90%.
-   * This sharp rise reflects widespread growth, especially in progressive or urbanized states.
+   * From 2018 to 2023:
+     * EV registrations grew from ~572K to ~3.56M, a 6x increase.
+     * The average EV share across states rose from 0.14% to 0.90%.
+     * This sharp rise reflects widespread growth, especially in progressive or urbanized states.
 
+3. Charging Infrastructure Growth is Lagging Slightly Behind
+     * Although charging outlets expanded, from ~64K in 2018 to ~176K in 2023, the growth rate lags behind EV registration growth.
+     * Some states have over 50 EVs per outlet, signaling potential strain and congestion.
+     * DC fast charging stations remain limited compared to Level 2 stations, which are much more widespread.
 
+4. Political Affiliation Highlights Stark Divide
+     * Democratic states have nearly double the EV share compared to Republican states on average.
+     * This reflects not only political climate but also infrastructure policy, urban density, and environmental emphasis.
+
+5. Gasoline Prices Show Modest Influence
+    * As gas prices rose from ~$2.56 to $3.12 per gallon (2018–2023), EV adoption rose too, but not always in a directly proportional way.
+    * States with high gas prices but poor infrastructure or incentives still had lower EV shares.
+    * This suggests gas prices are a somewhat contributing, but not significant, factor.
+
+5. Education Level Does Not Strongly Predict EV Adoption
+    * While states like California had both high EV share and high numbers of bachelor’s degrees held, this pattern did not generalize.
+    * Many states with high educational attainment had low EV adoption, and many states with low educational attainment still exhibited relatively high EV share.
+    * This suggests that factors have a much stronger influence than education level alone.
+    * In other words, higher education is not a reliable standalone predictor of EV market growth across states.
+
+These findings reflect only a narrow portion of the full report. To explore all visuals, you can download and open the complete Power BI file to access the full dashboard experience.
 
 ## Limitations & Challenges
 * data is only up until 2023
