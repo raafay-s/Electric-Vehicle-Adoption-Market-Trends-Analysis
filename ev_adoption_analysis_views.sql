@@ -139,13 +139,15 @@ FROM EV_ADOPTION
 ORDER BY gasoline_price_per_gallon DESC;
 
 
--- ========== STORED PROCEDURE: Yearly Summary Reporting ==========
+-- Stored Procedure: Yearly Summary Reporting ==========
 -- Purpose: Stored procedure that creates a yearly summary table with average EV share, income, and total stations
 
 -- Step 1: Create the summary table (run once before the procedure)
 CREATE TABLE EV_YEARLY_SUMMARY (
   year NUMBER,
   avg_ev_share NUMBER(5, 2),
+  ev_registrations NUMBER,
+  total_charging_outlets NUMBER,
   avg_income NUMBER,
   total_stations NUMBER
 );
@@ -165,7 +167,18 @@ BEGIN
 END;
 /
 
---Step 3: Run stored procedure
+--Step 3: Run & Automate stored procedure
+--This block creates a scheduled job named 'RUN_EV_YEARLY_SUMMARY_MONTHLY'. It executes the 'summarize_ev_by_year' stored procedure monthly on the 1st day at midnight
 BEGIN
-  summarize_ev_by_year;
+  DBMS_SCHEDULER.CREATE_JOB (
+    job_name        => 'RUN_EV_YEARLY_SUMMARY_MONTHLY',
+    job_type        => 'STORED_PROCEDURE',
+    job_action      => 'summarize_ev_by_year',
+    start_date      => SYSTIMESTAMP,
+    repeat_interval => 'FREQ=MONTHLY; BYMONTHDAY=1; BYHOUR=0; BYMINUTE=0; BYSECOND=0',
+    enabled         => TRUE,
+    auto_drop       => FALSE,
+    comments        => 'Monthly job to refresh EV_YEARLY_SUMMARY table'
+  );
 END;
+/
