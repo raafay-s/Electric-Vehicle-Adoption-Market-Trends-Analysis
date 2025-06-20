@@ -1,6 +1,9 @@
 # Electric Vehicle Adoption & Infrastructure Analysis
 ## Project Overview
-This project focuses on analyzing the landscape of Electric Vehicle (EV) adoption across the United States from 2018 to 2023. By leveraging data related to EV registrations, infrastructure availability, economic indicators, education levels, and political affiliation, I aimed to uncover meaningful insights about what drives EV growth and where the adoption gaps lie. I also analyzed how different socioeconomic and policy-based factors influence EV adoption and growth across states. The main objective was to conduct a comprehensive, data-driven analysis of the key enablers and obstacles in the EV transition using Python for data prep, Oracle SQL for modeling and logic, and Power BI for interactive visualization..
+This project explores the growth of electric vehicle (EV) adoption across the United States from 2018 to 2023, using a combination of cleaned state-level data and a fully interactive Power BI dashboard. The analysis covers key factors influencing EV uptake, including registration trends, charging infrastructure, financial incentives, fuel prices, income levels, and political affiliation. The main objective was to conduct a comprehensive, data-driven analysis of the key enablers and obstacles in the EV transition using Python for data prep, Oracle SQL for modeling and logic, and Power BI for interactive visualization. By transforming raw data into a structured format, this project successfully enables a multi-angle exploration of how adoption patterns differ across geography and time. The resulting dashboard empowers users to uncover state-specific insights, compare policy impacts, analyze nationwide charging infrastructures, and assess nationwide progress toward EV transition goals.
+
+
+
 
 ## Technologies and Libraries
 * **Python (pandas)**: Used for data cleaning, preprocessing, and preparing the dataset for analysis
@@ -87,18 +90,16 @@ I also implemented a stored procedure called **SUMMARIZE_EV_BY_YEAR**. This proc
 
 **Visualization (Power BI)**
 
-In Power BI, I connected to the SQL views and imported results. Using interactive slicers for year and state, I built multiple report pages highlighting:
-* EV Adoption Overview
+In Power BI, I connected directly to the SQL views and imported the query results to build a comprehensive and interactive report, Using dynamic slicers for year and state, I created multiple focused report pages to cover different aspects of the analysis:
+* EV Adoption Overview in the U.S.
 * Charging Infrastructure Analysis
-* Policy Impact
-* Socioeconomic Influences
+* Policy & Incentive Impact
+* Demographics & Economy
 
-I used card visuals, filled maps, line charts, bar charts, and many other constructive visuals. Tooltips, drill-downs, and slicers made the dashboards interactive. Some key visualizations include:
-* 1
-* 2
+I utilized a variety of visuals including card visuals for key metrics, scatter plots to reveal relationships between variables, line charts to show trends over time, and bar charts for comparisons across categories. To enhance user experience and interactivity, I incorporated tooltips for additional context, zoom sliders to allow detailed analysis of smaller data ranges, synchronized visuals that respond dynamically to each other’s selections, and slicers to filter data by relevant dimensions. This interactive Power BI dashboard enables users to easily explore the dataset, uncover patterns, and gain actionable insights into the evolving EV landscape.
 
 ## Results and Analysis
-Below are selected insights from the many analyses conducted across the EV dataset. These findings are based on interactive visuals, measures, and page-level filters available in the Power BI dashboard. To explore the full report, including all pages, visuals, breakdowns, and slicers, please download the "EV Adoption Overview & Market Trends Analysis" Power BI file and view it directly.
+Below are a few selected insights from the many analyses conducted across the EV dataset. These findings are based on interactive visuals, measures, and page-level filters available in the Power BI dashboard. To explore the full report, including all pages, visuals, breakdowns, and slicers, please download the "EV Adoption Overview & Market Trends Analysis" Power BI file and view it directly.
 
 1. National EV Adoption is Accelerating Rapidly
    * From 2018 to 2023:
@@ -132,5 +133,6 @@ These findings reflect a very narrow portion of the full report. To explore all 
 * data is only up until 2023
   
 ## Conclusion
-This EV Adoption project demonstrates a complete data pipeline. It started from messy raw data to a polished interactive dashboard. I explored electric vehicle adoption trends across the U.S. by correlating socioeconomic, environmental, and infrastructural factors. Using Python, SQL, and Power BI, I was able answer many complex questions and discover new trends. My findings show that states with strong incentives, higher income, and better charging infrastructure tend to have significantly higher EV adoption. This kind of insight can inform real-world policy and investment decisions in clean transportation infrastructure.
-
+This analysis showcases the full lifecycle of a comprehensive data-driven approach—from raw data to actionable insights. By leveraging Python for  data cleaning and preprocessing, Oracle SQL for data modeling and logic implementation, and Power BI for visualization, this project successfully uncovers multifaceted trends shaping electric vehicle adoption across the United States from 2018 to 2023. 
+Through the implementation of reusable SQL views and a stored procedure to summarize yearly metrics, this project lays the groundwork for future scalability and automation, enabling timely updates as new data becomes available. The Power BI dashboard’s interactivity—through slicers, zoom sliders, synchronized visuals, and contextual tooltips allows users to explore data from multiple perspectives, compare states, and evaluate the impact of policies and infrastructure investments.
+While this project does face limitations such as static datasets and manual ETL processes, it nevertheless provides an analytical framework that can inform decision-makers aiming to accelerate the transition to electric mobility. Ultimately, these insights emphasize that coordinated efforts across charging infrastructure, incentive programs, and policy alignment are critical to advancing EV adoption nationwide!
