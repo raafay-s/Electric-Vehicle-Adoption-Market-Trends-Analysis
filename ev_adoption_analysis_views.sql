@@ -159,6 +159,8 @@ BEGIN
   SELECT 
     year,
     ROUND(AVG(ev_share_percent), 2),
+    SUM(ev_registrations),
+    SUM(charging_outlets),
     ROUND(AVG(per_cap_income), 0),
     SUM(stations)
   FROM EV_ADOPTION
