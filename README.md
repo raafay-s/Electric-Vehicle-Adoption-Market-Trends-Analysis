@@ -16,6 +16,7 @@ This project explores the growth of electric vehicle (EV) adoption across the Un
 * **ev_adoption_analysis_views.sql**: SQL script that creates analytical views for exploring EV trends and metrics
 * **ev_adoption_schema_setup.sql**: SQL script to define and set up the database schema
 * **ev_data_cleaning_script.py**: Python script used to clean, preprocess, and export the raw data
+* 
 
 ## Dataset Summary
 I worked with a comprehensive dataset that compiled state-level EV adoption data from 2018 to 2023. The dataset contained economic indicators, environmental sentiment scores, charging infrastructure counts, and vehicle registration metrics across all 50 states
@@ -101,27 +102,27 @@ I utilized a variety of visuals including card visuals for key metrics, scatter 
 ## Results and Analysis
 Below are a few selected insights from the many analyses conducted across the EV dataset. These findings are based on interactive visuals, measures, and page-level filters available in the Power BI dashboard. To explore the full report, including all pages, visuals, breakdowns, and slicers, please download the "EV Adoption Overview & Market Trends Analysis" Power BI file and view it directly.
 
-1. National EV Adoption is Accelerating Rapidly
+* **National EV Adoption is Accelerating Rapidly**
    * From 2018 to 2023:
      * EV registrations grew from ~572K to ~3.56M, a 6x increase.
      * The average EV share across states rose from 0.14% to 0.90%.
      * This sharp rise reflects widespread growth, especially in progressive or urbanized states.
 
-3. Charging Infrastructure Growth is Lagging Slightly Behind
+* **Charging Infrastructure Growth is Lagging Slightly Behind**
      * Although charging outlets expanded, from ~64K in 2018 to ~176K in 2023, the growth rate lags behind EV registration growth.
      * Some states have over 50 EVs per outlet, signaling potential strain and congestion.
      * DC fast charging stations remain limited compared to Level 2 stations, which are much more widespread.
 
-4. Political Affiliation Highlights Stark Divide
+* **Political Affiliation Highlights Stark Divide**
      * Democratic states have nearly double the EV share compared to Republican states on average.
      * This reflects not only political climate but also infrastructure policy, urban density, and environmental emphasis.
 
-5. Gasoline Prices Show Modest Influence
+* **Gasoline Prices Show Modest Influence**
     * As gas prices rose from ~$2.56 to $3.12 per gallon (2018–2023), EV adoption rose too, but not always in a directly proportional way.
     * States with high gas prices but poor infrastructure or incentives still had lower EV shares.
     * This suggests gas prices are a somewhat contributing, but not significant, factor.
 
-5. Education Level Does Not Strongly Predict EV Adoption
+* **Education Level Does Not Strongly Predict EV Adoption**
     * While states like California had both high EV share and high numbers of bachelor’s degrees held, this pattern did not generalize.
     * Many states with high educational attainment had low EV adoption, and many states with low educational attainment still exhibited relatively high EV share.
     * This suggests that factors have a much stronger influence than education level alone.
@@ -130,7 +131,11 @@ Below are a few selected insights from the many analyses conducted across the EV
 These findings reflect a very narrow portion of the full report. To explore all visuals, you can download and open the complete Power BI file to access the full dashboard experience.
 
 ## Limitations & Challenges
-* data is only up until 2023
+Despite the comprehensive nature of this project, several limitations and challenges were encountered:
+* **Static Dataset**: The dataset used was a static snapshot from 2018 to 2023, which limits the ability to analyze real-time trends or sudden market changes.
+* **Limited Geographic Granularity**: Analysis was performed at the state level, which can mask important regional or local variations within states.
+* **External Factors Not Included**: Other external influences, such as supply chain constraints, technological advances, or cultural attitudes, were not included but could significantly impact EV adoption trends.
+* **Manual ETL Process**: The ETL workflow was manual which reduces scalability and can increase the risk of human error. Automating these processes would improve reliability.
   
 ## Conclusion
 This analysis showcases the full lifecycle of a comprehensive data-driven approach, from raw data to clear and actionable insights. By leveraging Python for  data cleaning and preprocessing, Oracle SQL for data modeling and logic implementation, and Power BI for visualization, this project successfully uncovers multifaceted trends shaping electric vehicle adoption across the United States from 2018 to 2023. 
