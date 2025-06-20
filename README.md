@@ -17,7 +17,7 @@ This project explores the growth of electric vehicle (EV) adoption across the Un
 * **EV Adoption Overview & Market Trends Analysis.pdf**: Static PDF export of the Power BI report
 
 ## Dataset Summary
-I worked with a comprehensive [dataset](https://www.kaggle.com/datasets/surajshivakumar/ev-adoption-usa/data) from Kaggle that compiled state-level EV adoption data from 2018 to 2023. The dataset contained economic indicators, environmental sentiment scores, charging infrastructure counts, and vehicle registration metrics across all 50 states
+I worked with a comprehensive [dataset](https://www.kaggle.com/datasets/surajshivakumar/ev-adoption-usa/data) from Kaggle that compiled state-level EV adoption data from 2018 to 2023. The dataset contained economic indicators, environmental sentiment scores, charging infrastructure counts, and vehicle registration metrics across all 50 states.
 <details>
 <summary><strong>Click to expand Variable Dictionary</strong></summary>
 
@@ -79,14 +79,13 @@ I began by collecting a raw CSV dataset from Kaggle (shown above) that combined 
 
 **Data Modeling and Analysis (Oracle SQL)**
 
-Once cleaned, the data was loaded into Oracle SQL. I created a master table **EV_ADOPTION**, into which I inserted the entire dataset. Then I wrote a collection of CREATE VIEW statements to build logic layers that answered specific questions including (but not limited to):
-* EV registration growth by year using LAG() window functions
-* Average EV share growth across years and states
-* Identifying under-supported states by computing EVs per charging station
-* Comparing EV share with income, education, political party, and incentives
-* Ranking top 10 states by recent EV share
+After preprocessing the dataset using Python, the cleaned EV adoption data was loaded into an Oracle SQL environment. The database layer was designed to serve as a foundation for efficient reporting, enabling advanced trend analysis and segmentation.
 
-I also implemented a stored procedure called **SUMMARIZE_EV_BY_YEAR**. This procedure is designed to generate a yearly summary report that captures the most important trends in the dataset. Specifically, it looks at all the data in the EV_ADOPTION table and, for each year, calculates three key metrics: the average EV share percentage (how widespread EV usage is), the average per capita income, and the total number of public EV charging stations. The procedure then inserts one row per year with those stats into a new table called **EV_YEARLY_SUMMARY**. This makes it much easier to  analyze how these metrics have changed over time in dashboards without rerunning complex queries. The dataset I used in this project is a static snapshot, but my stored procedure is designed to calculate and update yearly EV summary statistics. If connected to a dynamic data source, such as recurring API feeds or automated CSV uploads with updated data, this procedure could be scheduled to run regularly and keep the summary table up to date without manual intervention, allowing dashboards to reflect real-time trends.
+The core table, **EV_ADOPTION**, was created to store the cleaned dataset, capturing state-level EV registration metrics from 2018 to 2023. It includes variables related to vehicle counts, charging infrastructure, financial incentives, education levels, income, electricity and fuel prices, and political affiliation. From this base table, a collection of SQL views were created to support targeted analysis and isolate key patterns in EV adoption.
+
+These views were designed with modularity in mind, each focusing on a specific analytical angle. This structure not only simplified querying but also enabled seamless integration with Power BI, where each view could be tied to seperate visuals.
+
+In addition to the views, I also created a stored procedure **(summarize_ev_by_year)** to automate the generation of a yearly summary table. While the dataset I used is static, the procedure is built to support automation via Oracle’s DBMS_SCHEDULER. In a dynamic data environment, this procedure could be scheduled to run monthly, ensuring the summary table stays synchronized with new data as it arrives.
 
 **Visualization (Power BI)**
 
