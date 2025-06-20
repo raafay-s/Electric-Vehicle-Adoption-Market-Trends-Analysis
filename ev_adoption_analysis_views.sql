@@ -139,7 +139,7 @@ FROM EV_ADOPTION
 ORDER BY gasoline_price_per_gallon DESC;
 
 
--- Stored Procedure: Yearly Summary Reporting ==========
+-- Stored Procedure: Yearly Summary Reporting
 -- Purpose: Stored procedure that creates a yearly summary table with average EV share, income, and total stations
 
 -- Step 1: Create the summary table (run once before the procedure)
