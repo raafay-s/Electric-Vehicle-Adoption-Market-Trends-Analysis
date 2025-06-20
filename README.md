@@ -4,8 +4,8 @@ This project explores the growth of electric vehicle (EV) adoption across the Un
 
 ## Technologies and Libraries
 * **Python (pandas)**: Used for data cleaning, preprocessing, and preparing the dataset for analysis
-* **Oracle SQL**: Employed for querying, transforming, and organizing data into analytical views
-* **Power BI**: Utilized to build interactive dashboards and visualize key trends and insights
+* **Oracle SQL**: Employed for querying, transforming, and organizing data into views
+* **Power BI**: Utilized to build interactive dashboards and visualize trends
 
 ## Files Included
 * **EV_Data.csv**: Raw dataset containing electric vehicle adoption and infrastructure data across U.S. states
@@ -85,7 +85,7 @@ The core table, **EV_ADOPTION**, was created to store the cleaned dataset, captu
 
 These views were designed with modularity in mind, each focusing on a specific analytical angle. This structure not only simplified querying but also enabled seamless integration with Power BI, where each view could be tied to seperate visuals.
 
-In addition to the views, I also created a stored procedure **(summarize_ev_by_year)** to automate the generation of a yearly summary table. While the dataset I used is static, the procedure is built to support automation via Oracle’s DBMS_SCHEDULER. In a dynamic data environment, this procedure could be scheduled to run monthly, ensuring the summary table stays synchronized with new data as it arrives.
+In addition to the views, I also created a stored procedure, **summarize_ev_by_year**, to automate the generation of a yearly summary table. While the dataset I used is static, the procedure is built to support automation via Oracle’s DBMS_SCHEDULER. In a dynamic data environment, this procedure could be scheduled to run monthly, ensuring the summary table stays synchronized with new data as it arrives.
 
 **Visualization (Power BI)**
 
@@ -126,7 +126,7 @@ Below are a few selected insights from the many analyses conducted across the EV
     * This suggests that factors have a much stronger influence than education level alone.
     * In other words, higher education is not a reliable standalone predictor of EV market growth across states.
 
-These findings reflect a very narrow portion of the full report. To explore all visuals, you can download and open the complete [Power BI file](https://github.com/raafay-s/Electric-Vehicle-Adoption-Market-Trends-Analysis/blob/main/EV%20Adoption%20Overview%20%26%20Market%20Trends%20Analysis.pbix) to access the full dashboard experience.
+These findings reflect a very narrow portion of the full report. To explore all visuals, you can download and open the complete [Power BI file](https://github.com/raafay-s/Electric-Vehicle-Adoption-Market-Trends-Analysis/blob/main/EV%20Adoption%20Overview%20%26%20Market%20Trends%20Analysis.pbix) to access the full dashboard experience!
 
 ## Limitations & Challenges
 Despite the comprehensive nature of this project, several limitations and challenges were encountered:
@@ -138,4 +138,4 @@ Despite the comprehensive nature of this project, several limitations and challe
 ## Conclusion
 This analysis showcases the full lifecycle of a comprehensive data-driven approach, from raw data to clear and actionable insights. By leveraging Python for  data cleaning and preprocessing, Oracle SQL for data modeling and logic implementation, and Power BI for visualization, this project successfully uncovers multifaceted trends shaping electric vehicle adoption across the United States from 2018 to 2023. 
 Through the implementation of reusable SQL views and a stored procedure to summarize yearly metrics, this project lays the groundwork for future scalability and automation, enabling timely updates as new data becomes available. The Power BI dashboard’s interactivity allows users to explore data from multiple perspectives, compare states, and evaluate the impact of policies and infrastructure investments.
-While this project does face limitations such as static datasets and manual ETL processes, it nevertheless provides an analytical framework that can inform decision-makers aiming to accelerate the transition to electric mobility. Ultimately, these insights emphasize that coordinated efforts across different factors are all very critical to advancing EV adoption nationwide!
+While this project does face limitations such as static datasets and manual ETL processes, it nevertheless provides an analytical framework that can inform decision-makers aiming to accelerate the transition to electric mobility!
