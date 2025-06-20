@@ -98,7 +98,13 @@ I used card visuals, filled maps, line charts, bar charts, and many other constr
 * 2
 
 ## Results and Analysis
-1. 2dmedeke
+below r some key findings of the nany analysis and findings i made. to view the full report to access like everything pls download the powebi report and see for yourself with al lthe interactive visuals and ...
+1. National EV Adoption is Accelerating Rapidly
+   From 2018 to 2023:
+   * EV registrations grew from ~572K to ~3.56M — a 6x increase.
+   * The average EV share across states rose from 0.14% to 0.90%.
+   * This sharp rise reflects widespread growth, especially in progressive or urbanized states.
+
 
 
 ## Limitations & Challenges
