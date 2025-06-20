@@ -64,8 +64,9 @@ I worked with a comprehensive dataset from Kaggle that compiled state-level EV a
 ## Data Workflow Overview
 This project followed a manual ETL-style process to move from raw data to interactive insights. Although not automated, the workflow mirrored the structure of a traditional ETL pipeline:
 * Extract: Pulled raw EV data from Kaggle
-* Transform: Cleaned and preprocessed using Python (pandas), with additional logic and aggregation in SQL
-* Load: Inserted into Oracle SQL tables for analysis and visualization in Power BI
+* Transform: Cleaned and preprocessed using Python (pandas)
+* Load: Imported the cleaned data into an Oracle SQL database under the EV_ADOPTION table and connected Power BI to the SQL views 
+
 
 **Extract & Clean (Python)**
 
@@ -98,7 +99,7 @@ In Power BI, I connected directly to the SQL views and imported the query result
 I utilized a variety of visuals including card visuals for key metrics, scatter plots to reveal relationships between variables, line charts to show trends over time, and bar charts for comparisons across categories. To enhance user experience and interactivity, I incorporated tooltips for additional context, zoom sliders to allow detailed analysis of smaller data ranges, synchronized visuals that respond dynamically to each other’s selections, and slicers to filter data by relevant dimensions. This interactive Power BI dashboard enables users to easily explore the dataset, uncover patterns, and gain actionable insights into the evolving EV landscape.
 
 ## Results and Analysis
-Below are a few selected insights from the many analyses conducted across the EV dataset. These findings are based on interactive visuals, measures, and page-level filters available in the Power BI dashboard. To explore the full report, including all pages, visuals, breakdowns, and slicers, please download the "EV Adoption Overview & Market Trends Analysis" Power BI file and view it directly.
+Below are a few selected insights from the many analyses conducted across the EV dataset. These findings are based on interactive visuals, measures, and page-level filters available in the Power BI dashboard. To explore the full report, including all pages, visuals, breakdowns, and slicers, please download the EV Adoption Overview & Market Trends Analysis Power BI file and view it directly.
 
 * **National EV Adoption is Accelerating Rapidly**
    * From 2018 to 2023:
