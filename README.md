@@ -10,7 +10,7 @@ This project explores the growth of electric vehicle (EV) adoption across the Un
 ## Files Included
 * **EV_Data.csv**: Raw dataset containing electric vehicle adoption and infrastructure data across U.S. states
 * **EV_Data_Cleaned.csv**: Cleaned and preprocessed version of the raw EV dataset
-* **ev_adoption_analysis_views.sql**: SQL script that creates analytical views for exploring EV trends and metrics
+* **ev_adoption_analysis_views_and_procedure.sql**: SQL script that contains views and stored procedure
 * **ev_adoption_schema_setup.sql**: SQL script to define and set up the database schema
 * **ev_data_cleaning_script.py**: Python script used to clean, preprocess, and export the raw data
 * **EV Adoption Overview & Market Trends Analysis.pbix**: Power BI report file containing the interactive dashboards
