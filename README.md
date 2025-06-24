@@ -17,7 +17,7 @@ This project explores the growth of electric vehicle (EV) adoption across the Un
 * **EV Adoption Overview & Market Trends Analysis.pdf**: Static PDF export of the Power BI report
 
 ## Dataset Summary
-I worked with a comprehensive [dataset](https://www.kaggle.com/datasets/surajshivakumar/ev-adoption-usa/data) from Kaggle that compiled state-level EV adoption data from 2018 to 2023. The dataset contained economic indicators, environmental sentiment scores, charging infrastructure counts, and vehicle registration metrics across all 50 states.
+I worked with a comprehensive [dataset](https://github.com/raafay-s/Electric-Vehicle-Adoption-Market-Trends-Analysis/blob/main/EV_Data.csv) from Kaggle that compiled state-level EV adoption data from 2018 to 2023. The dataset contained economic indicators, environmental sentiment scores, charging infrastructure counts, and vehicle registration metrics across all 50 states.
 <details>
 <summary><strong>Click to expand Variable Dictionary</strong></summary>
 
